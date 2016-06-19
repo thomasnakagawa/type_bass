@@ -1,0 +1,92 @@
+.site {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	font-family: "Andale Mono",monospace;
+	overflow-x: scroll;
+
+}
+
+textarea {
+    resize: none;
+    overflow-x: hidden;
+}
+.input-box {
+	min-width: 580px;
+	min-height: 50px;
+	border: solid 8px black;
+	padding: 5px;
+	position: relative;
+	margin: 10px;
+}
+	.input-area {
+		outline-width: 0;
+		border: 0;
+		/*width: 100%;*/
+		height: 100%;
+		font-size: 36px;
+		font-family: "Andale Mono",monospace;
+		white-space: nowrap;
+		background-color: transparent;
+	}
+
+	.dots-overlay {
+		position: absolute;
+		min-width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		z-index: -1;
+		display: flex;
+		flex-direction: column;
+		padding: 5px;
+	}
+		.dot-row {
+			display: flex;
+			flex-direction: row;
+		}
+
+			.dot {
+				margin-left: 7px;
+				margin-right: 6.8px;
+				margin-top: 44px;
+				width: 6px;
+				height: 6px;
+				border-radius: 50%;
+				z-index: 2;
+				box-sizing: border-box;
+
+			}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.space {
+	width: 50px;
+}
+
+.link-button {
+	margin-top: 80px;
+	font-size: 10px;
+	cursor: pointer;
+	&: hover{
+		text-decoration: underline;
+	};
+}
+
+#footer {
+	height: 40px;
+	font-family: "Andale Mono",monospace;
+	background-color: lightGrey;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	font-color: #111111;
+	padding-top: 15px;
+}
