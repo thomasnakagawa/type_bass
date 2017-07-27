@@ -3,15 +3,15 @@ import {render} from 'react-dom';
 import howler from 'howler';
 
 export default class App extends React.Component {
-	constructor() {
-		super();
-		this.state = {
+  constructor() {
+    super();
+    this.state = {
       charIndex: 0,
       timeSig: '4/4',
       drums: false,
       fillBars: false,
       showAdvanced: false,
-		};
+    };
 
     this.sounds = {
       // letters arranged by how frequently they appear in english
@@ -47,13 +47,13 @@ export default class App extends React.Component {
       snare: new Howl({urls: ['sounds/drums/snare.wav'], volume: '0.15'}),
 
     }
-	}
+  }
 
 	componentDidMount() {
     window.setInterval(() => {
       this.playNote();
     }, 180);
-	}
+  }
 
 
   playNote() {
@@ -220,8 +220,6 @@ export default class App extends React.Component {
     );
   }
 
-	componentWillUnmount() {
-	}
 
   render () {
     return (
